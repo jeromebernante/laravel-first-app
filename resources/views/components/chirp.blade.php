@@ -27,7 +27,7 @@
                         @endif
                     </div>
 
-                    {{-- @if (auth()->check() && auth()->id() === $chirp->user_id) --}}
+                    @if (auth()->check() && auth()->id() === $chirp->user_id)
                         <!-- Edit/Delete Buttons -->
                         <div class="flex gap-1">
                             <a href="/chirps/{{ $chirp->id }}/edit" class="btn btn-ghost btn-xs">
@@ -43,7 +43,7 @@
                                 </button>
                             </form>
                         </div>
-                    {{-- @endif --}}
+                    @endif
                 </div>
 
                 <p class="mt-1">
